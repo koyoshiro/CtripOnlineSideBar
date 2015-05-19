@@ -1,0 +1,24 @@
+{
+    "requirejs": {
+        "main": {
+            "options": {
+                "baseUrl": "SideBarSrc",
+                "mainConfigFile" : "./main.js",
+                "paths": {
+                    "customConsole": "console",
+                    "mootools": "mootools",
+                    "store": "store"
+                },
+                "web": {
+                    "include": [
+                        "require",
+                        "customConsole",
+                        "mootools",
+                        "store"
+                    ],
+                    "out": "dest/libs.js"
+                }
+            }
+        }
+    }
+}

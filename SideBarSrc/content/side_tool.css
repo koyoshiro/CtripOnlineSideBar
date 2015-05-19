@@ -1,0 +1,1139 @@
+﻿/*===== 侧边工具条的样式 =====*/
+.pub_side_tool h3,
+.pub_side_tool div,
+.pub_side_tool ul,
+.pub_side_tool li,
+.pub_side_tool p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pub_side_tool img {
+    border: 0 none;
+}
+
+.pub_side_tool {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font: normal 12px/1.5em "Microsoft YaHei", "微软雅黑", simsun, Tahoma, Verdana, Lucida, Arial, Helvetica, sans-serif;
+    z-index: 99;
+}
+
+.pub_side_tool a {
+    color: #333;
+    text-decoration: none;
+}
+
+.pub_side_tool a:hover {
+    text-decoration: underline;
+}
+
+.pub_side_tool .stool_icon,
+.pub_side_tool .stool_icon_type,
+.pub_side_tool .stool_gravatar b {
+    display: block;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    line-height: 999em;
+    font-size: 0;
+    background: url(http://pic.c-ctrip.com/common/side_tool_bar/icon_side_tool.png) no-repeat -1000px -1000px;
+}
+
+.pub_side_tool .stool_icon_type {
+    width: 46px;
+    height: 46px;
+    background-image: url(http://pic.c-ctrip.com/common/side_tool_bar/icon_side_tool_type.png);
+}
+
+/* 各个icon的坐标位置 */
+.pub_side_tool .stool_qr {
+    background-position: -540px -60px;
+}
+
+.pub_side_tool .stool_qr:hover,
+.pub_side_tool .stool_qr_current.stool_qr {
+    background-position: -540px 0;
+}
+
+.pub_side_tool .stool_qrcode_pop {
+    display: none;
+}
+
+.pub_side_tool .stool_qr_current.stool_qrcode_pop {
+    display: block;
+}
+
+.pub_side_tool .stool_non-login {
+    background-position: -420px -60px;
+}
+
+/*
+.pub_side_tool .stool_non-login:hover,
+.pub_side_tool .stool_non-login {background-position:-420px 0;}
+*/
+.pub_side_tool .stool_non-login:hover {
+    background-position: -660px -60px;
+}
+
+.pub_side_tool .stool_history {
+    background-position: 0 -60px;
+}
+
+.pub_side_tool .stool_history:hover {
+    background-position: 0 0;
+}
+
+.pub_side_tool .stool_history_cur {
+    background-position: -600px 0;
+}
+
+.pub_side_tool .stool_fav {
+    background-position: -60px -60px;
+}
+
+.pub_side_tool .stool_fav:hover {
+    background-position: -60px 0;
+}
+
+.pub_side_tool .stool_fav_cur {
+    background-position: -660px 0;
+}
+
+.pub_side_tool .stool_tools {
+    background-position: -120px -60px;
+}
+
+.pub_side_tool .stool_tools:hover {
+    background-position: -120px 0;
+}
+
+.pub_side_tool .stool_tools_cur {
+    background-position: -600px -60px;
+}
+
+.pub_side_tool .stool_top {
+    background-position: -180px -60px;
+}
+
+.pub_side_tool .stool_top:hover {
+    background-position: -180px 0;
+}
+
+.pub_side_tool .stool_feedback {
+    background-position: -240px -60px;
+}
+
+.pub_side_tool .stool_feedback:hover {
+    background-position: -240px 0;
+}
+
+.pub_side_tool .stool_serveic {
+    background-position: -300px -60px;
+}
+
+.pub_side_tool .stool_serveic:hover {
+    background-position: -300px 0;
+}
+
+.pub_side_tool .stool_min {
+    height: 30px;
+    background-position: -360px -60px;
+}
+
+.pub_side_tool .stool_min:hover {
+    background-position: -360px 0;
+}
+
+.pub_side_tool .stool_max {
+    height: 30px;
+    background-position: -480px -60px;
+}
+
+.pub_side_tool .stool_max:hover {
+    background-position: -480px 0;
+}
+
+.pub_side_tool .stool_t_train .stool_icon_type {
+    background-position: 0 0;
+}
+
+.pub_side_tool .stool_t_lowfly .stool_icon_type {
+    background-position: -60px 0;
+}
+
+.pub_side_tool .stool_t_flytime .stool_icon_type {
+    background-position: -120px 0;
+}
+
+.pub_side_tool .stool_t_credit .stool_icon_type {
+    background-position: -180px 0;
+}
+
+.pub_side_tool .stool_t_weather .stool_icon_type {
+    background-position: -240px 0;
+}
+
+.pub_side_tool .stool_t_car .stool_icon_type {
+    background-position: -300px 0;
+}
+
+.pub_side_tool .stool_t_cartime .stool_icon_type {
+    background-position: -360px 0;
+}
+
+.pub_side_tool .stool_t_hotel_join .stool_icon_type {
+    background-position: -420px 0;
+}
+
+.pub_side_tool .stool_t_city .stool_icon_type {
+    background-position: -480px 0;
+}
+
+.pub_side_tool .stool_t_wifi .stool_icon_type {
+    background-position: -540px 0;
+}
+
+.pub_side_tool .stool_t_train a:hover .stool_icon_type {
+    background-position: 0 -60px;
+}
+
+.pub_side_tool .stool_t_lowfly a:hover .stool_icon_type {
+    background-position: -60px -61px;
+}
+
+.pub_side_tool .stool_t_flytime a:hover .stool_icon_type {
+    background-position: -120px -60px;
+}
+
+.pub_side_tool .stool_t_credit a:hover .stool_icon_type {
+    background-position: -180px -60px;
+}
+
+.pub_side_tool .stool_t_weather a:hover .stool_icon_type {
+    background-position: -240px -60px;
+}
+
+.pub_side_tool .stool_t_car a:hover .stool_icon_type {
+    background-position: -300px -60px;
+}
+
+.pub_side_tool .stool_t_cartime a:hover .stool_icon_type {
+    background-position: -360px -60px;
+}
+
+.pub_side_tool .stool_t_hotel_join a:hover .stool_icon_type {
+    background-position: -420px -60px;
+}
+
+.pub_side_tool .stool_t_city a:hover .stool_icon_type {
+    background-position: -480px -60px;
+}
+
+.pub_side_tool .stool_t_wifi a:hover .stool_icon_type {
+    background-position: -540px -60px;
+}
+
+.diamond01, .diamond02, .diamond03, .diamond04, .diamond05, .diamond06, .diamond01_half, .diamond02_half, .diamond03_half, .diamond04_half, .diamond05_half, .diamond06_half, .star01, .star02, .star03, .star04, .star05 {
+    background-image: url(http://pic.c-ctrip.com/index/un_index141218.png);
+    background-repeat: no-repeat;
+}
+
+/* diamonds */
+.diamond01, .diamond02, .diamond03, .diamond04, .diamond05, .diamond06, .diamond01_half, .diamond02_half, .diamond03_half, .diamond04_half, .diamond05_half, .diamond06_half, .star01, .star02, .star03, .star04, .star05 {
+    display: inline-block;
+    height: 12px;
+    overflow: hidden;
+    _margin-bottom: 4px;
+}
+
+.diamond01, .diamond02, .diamond03, .diamond04, .diamond05, .diamond06 {
+    background-position: 0 2px;
+}
+
+.diamond01, .star01 {
+    width: 11px;
+}
+
+.diamond02, .star02 {
+    width: 23px;
+}
+
+.diamond03, .star03 {
+    width: 35px;
+}
+
+.diamond04, .star04 {
+    width: 47px;
+}
+
+.diamond05, .star05 {
+    width: 59px;
+}
+
+.diamond06 {
+    width: 71px;
+}
+
+.diamond01_half {
+    width: 11px;
+    background-position: -72px 2px;
+}
+
+.diamond02_half {
+    width: 23px;
+    background-position: -60px 2px;
+}
+
+.diamond03_half {
+    width: 35px;
+    background-position: -48px 2px;
+}
+
+.diamond04_half {
+    width: 47px;
+    background-position: -36px 2px;
+}
+
+.diamond05_half {
+    width: 59px;
+    background-position: -24px 2px;
+}
+
+.diamond06_half {
+    width: 71px;
+    background-position: -12px 2px;
+}
+
+/* stars */
+.star01, .star02, .star03, .star04, .star05 {
+    background-position: 1px -13px;
+}
+
+/* base price */
+.c_price {
+    color: #ff6602;
+    font: 22px/1.5 arial;
+    *padding-left: 8px;
+    *background: url(http://pic.c-ctrip.com/index/un_index141218.png) -79px -18px no-repeat;
+    letter-spacing: -1px;
+    vertical-align: -2px;
+}
+
+.c_price:before {
+    content: "\00A5";
+    color: #4d4d4d;
+    font: 12px/1.5 Arial;
+    vertical-align: 0.5em;
+    position: relative;
+    z-index: 1;
+    margin-right: 2px;
+}
+
+.s_price {
+    color: #ff6602;
+    font: 16px/1.5 arial;
+    *padding-left: 8px;
+    *background: url(http://pic.c-ctrip.com/index/un_index141218.png) -79px -18px no-repeat;
+    letter-spacing: -1px;
+    vertical-align: -2px;
+}
+
+/* 工具图标hover时的文字提示 */
+.pub_side_tool .stool_hover_title {
+    position: absolute;
+    top: 16px;
+    right: 36px;
+    width: 60px;
+    height: 36px;
+    overflow: hidden;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background-color: #E4EAF0;
+}
+
+.pub_side_tool .stool_hover_history {
+    top: 0;
+}
+
+.pub_side_tool .stool_hover_fav {
+    top: 46px;
+}
+
+.pub_side_tool .stool_hover_tool {
+    top: 92px;
+}
+
+.pub_side_tool .stool_hover_top {
+    top: 0;
+}
+
+.pub_side_tool .stool_hover_feedback {
+    top: 51px;
+}
+
+.pub_side_tool .stool_hover_serveic {
+    top: 102px;
+}
+
+.pub_side_tool .stool_ctrl {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 100%;
+    background-color: #E4EAF0;
+    zoom: 1;
+    _text-align: center;
+}
+
+/* .pub_side_tool .stool_ctrl {float:left;width:36px;height:100%;background-color:#E4EAF0;zoom:1;_text-align:center;} */
+.pub_side_tool .stool_ctrl:after {
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.pub_side_tool .stool_ad {
+    position: relative;
+    height: 115px;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_current .stool_ad_pop {
+    display: block;
+}
+
+.pub_side_tool .stool_qr_code {
+    position: relative;
+    padding: 10px 0;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_login {
+    position: relative;
+    margin-bottom: 10px;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_gravatar,
+.pub_side_tool .stool_non-login {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    margin: 15px 0;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_gravatar b,
+.pub_side_tool .stool_current.stool_gravatar b {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 5px;
+    height: 9px;
+    background-position: -4800px -1200px;
+}
+
+.pub_side_tool .stool_gravatar:hover,
+.pub_side_tool .stool_current.stool_gravatar {
+    background-color: #2577E3;
+}
+
+.pub_side_tool .stool_gravatar:hover b,
+.pub_side_tool .stool_current.stool_gravatar:hover b {
+    background-position: -480px -120px;
+}
+
+.pub_side_tool .stool_gravatar img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    margin: 4px 5px 0;
+    border: 1px solid #B2C4DB;
+    border-radius: 50%;
+}
+
+.pub_side_tool .stool_ctrl .line {
+    display: block;
+    width: 23px;
+    height: 1px;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 999em;
+    font-size: 0;
+    background-color: #B2C4DB;
+}
+
+.pub_side_tool .stool_func {
+    position: relative;
+}
+
+.pub_side_tool .stool_func a {
+    margin-bottom: 10px;
+}
+
+.pub_side_tool .stool_other {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    height: 102px;
+    padding-top: 51px;
+    background-color: #E4EAF0;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_other .stool_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pub_side_tool .stool_other a {
+    margin-bottom: 15px;
+    _display: inline;
+    _zoom: 1;
+    _vertical-align: middle;
+}
+
+.pub_side_tool .stool_scale {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*===== 缩小后的工具栏 =====*/
+.pub_side_tool .stool_short_box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    background: none;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_short_box .stool_ad,
+.pub_side_tool .stool_short_box .stool_qr_code,
+.pub_side_tool .stool_short_box .line_s,
+.pub_side_tool .stool_short_box .stool_func {
+    display: none;
+}
+
+.pub_side_tool .stool_short_box .stool_min {
+    height: 30px;
+    background-position: -480px -60px;
+}
+
+.pub_side_tool .stool_short_box .stool_min:hover {
+    background-position: -480px 0;
+}
+
+.pub_side_tool .stool_short_box .stool_other {
+    position: static;
+    padding: 129px 0 30px;
+}
+
+.pub_side_tool .stool_short_box .stool_other .stool_top {
+    top: 78px;
+}
+
+.pub_side_tool .stool_short_box .stool_login {
+    position: relative;
+    margin-bottom: -67px;
+    z-index: 2;
+}
+
+.pub_side_tool .stool_short_box .stool_hover_title {
+    top: 0;
+    *top: 15px;
+}
+
+.pub_side_tool .stool_short_box .stool_hover_top {
+    top: 78px;
+}
+
+.pub_side_tool .stool_short_box .stool_hover_feedback {
+    top: 129px;
+}
+
+.pub_side_tool .stool_short_box .stool_hover_serveic {
+    top: 180px;
+}
+
+/*===== 广告弹出内容 =====*/
+.pub_side_tool .stool_ad_pop {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 36px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.pub_side_tool .stool_ad_pop .stool_arrow {
+    position: absolute;
+    top: 53px;
+    right: -5px;
+    width: 5px;
+    height: 9px;
+    background-position: -280px -120px;
+}
+
+.pub_side_tool .stool_ad_pop .stool_ad_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-position: -540px -120px;
+}
+
+/*===== 手机版二维码 =====*/
+.pub_side_tool .stool_qrcode_pop {
+    position: absolute;
+    top: 10px;
+    right: 36px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #91ABCD;
+    border-right: 0 none;
+    z-index: 10;
+}
+
+.pub_side_tool .stool_qrcode_pop img {
+    margin: 5px 0;
+    border: 0 none;
+    vertical-align: middle;
+}
+
+.pub_side_tool .stool_qrcode_pop div {
+    height: 30px;
+    overflow: hidden;
+    line-height: 32px;
+    font-size: 12px;
+    background-color: #F1F4F7;
+}
+
+.pub_side_tool .stool_qrcode_pop a {
+    color: #333333;
+    font-family: simsun;
+    text-decoration: none;
+}
+
+.pub_side_tool .stool_qrcode_pop .stool_qr_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: -180px -120px;
+}
+
+/*===== 侧边内容统一样式 =====*/
+.pub_side_tool .stool_cont_wrap {
+    position: relative;
+    float: left;
+    width: 235px;
+    height: 100%;
+    z-index: 11;
+    background-color: #F6F6F6;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_cont_hd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 235px;
+    height: 36px;
+    overflow: hidden;
+    line-height: 36px;
+    text-align: center;
+    color: #333;
+    background-color: #E4EAF0;
+    z-index: 5;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_cont_hd h3 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.pub_side_tool .stool_cont_wrap .stool_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 0 -120px;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_cont_m {
+    width: 255px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 35px;
+    zoom: 1;
+    *position: relative;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_btn {
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #DDDDDD;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_btn a {
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    padding: 0 15px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: simsun;
+    color: #999999;
+    border: 1px solid #D3D3D3;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 0 0 #E2E2E2;
+    border-radius: 2px;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_btn a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.pub_side_tool .stool_tips_no_list {
+    padding-top: 200px;
+    text-align: center;
+    font-size: 14px;
+    background: url(http://pic.c-ctrip.com/common/side_tool_bar/stool_no_item.jpg) no-repeat center 15px;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_retry .stool_tips_no_list {
+    color: #999999;
+    background-image: url(http://pic.c-ctrip.com/common/side_tool_bar/stool_load_fail.jpg);
+}
+
+.pub_side_tool .stool_cont_wrap .stool_retry .stool_btn {
+    border-top: 0 none;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_retry .stool_btn a {
+    color: #666666;
+    padding: 0 40px;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_retry .stool_btn a:hover {
+    color: #FFFFFF;
+    background-color: #0066CC;
+    border-color: #0066CC;
+}
+
+.pub_side_tool .stool_cont_wrap .stool_loading .stool_tips_no_list {
+    color: #999;
+    background-image: url(http://pic.c-ctrip.com/common/side_tool_bar/stool_loading.gif);
+}
+
+.pub_side_tool .stool_cont_wrap .stool_loading .stool_tips_no_list img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* 我的携程面板 */
+.pub_side_tool .stool_myctrip .stool_cont_m {
+    width: 195px;
+    overflow: hidden;
+    padding: 20px;
+    color: #333;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_myctrip .stool_member_info {
+    position: relative;
+    height: 70px;
+    padding: 36px 0 20px 80px;
+}
+
+.pub_side_tool .stool_myctrip .stool_gravatar_b {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.pub_side_tool .stool_myctrip .stool_gravatar_b img {
+    display: block;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.pub_side_tool .stool_myctrip .stool_member_name {
+    display: block;
+    width: 115px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.pub_side_tool .stool_myctrip .stool_member_level {
+    font-style: normal;
+}
+
+.pub_side_tool .stool_mail_num {
+    margin-left: 10px;
+    color: #0066CC;
+}
+
+.pub_side_tool .stool_mail_num .stool_icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-position: -240px -120px;
+}
+
+.pub_side_tool .stool_member_money {
+    height: 70px;
+    overflow: hidden;
+    border: solid #DDDDDD;
+    border-width: 1px 0;
+}
+
+.pub_side_tool .stool_member_money ul {
+    _width: 235px;
+    overflow: hidden;
+    margin-left: -10px;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_member_money li {
+    float: left;
+    width: 58px;
+    margin-left: 10px;
+    text-align: center;
+    _display: inline;
+}
+
+.pub_side_tool .stool_member_money li span {
+    display: block;
+    height: 20px;
+    padding-top: 15px;
+}
+
+.pub_side_tool .stool_member_money li a {
+    color: #0066CC;
+}
+
+.pub_side_tool .stool_member_order .stool_icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.pub_side_tool .stool_member_order {
+    overflow: hidden;
+    padding-top: 20px;
+    *padding-bottom: 20px;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_member_order li {
+    float: left;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.pub_side_tool .stool_member_order li a {
+    display: inline-block;
+    height: 18px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.pub_side_tool .stool_member_order li em {
+    font-style: normal;
+    font-size: 12px;
+    color: #0066CC;
+}
+
+.pub_side_tool .stool_order_all .stool_icon {
+    background-position: -300px -120px;
+}
+
+.pub_side_tool .stool_order_wait .stool_icon {
+    background-position: -340px -120px;
+}
+
+.pub_side_tool .stool_order_will .stool_icon {
+    background-position: -380px -120px;
+}
+
+.pub_side_tool .stool_order_comment .stool_icon {
+    background-position: -420px -120px;
+}
+
+/* 我看过的历史记录 */
+.pub_side_tool .stool_history .stool_item_list {
+    padding-top: 41px;
+}
+
+.pub_side_tool .stool_item_list {
+    overflow: hidden;
+    margin: 10px;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_item_list li {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    padding-left: 85px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    zoom: 1;
+}
+
+.pub_side_tool .stool_item_list li a {
+    *cursor: pointer;
+}
+
+.pub_side_tool .stool_item_list .b_thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.pub_side_tool .stool_item_list .b_thumb img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+}
+
+.pub_side_tool .stool_item_list .b_name_single {
+    display: inline-block;
+    width: 130px;
+    height: 18px;
+    overflow: hidden;
+    padding-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+
+.pub_side_tool .stool_item_list .b_tag {
+    left: 0;
+}
+
+.pub_side_tool .stool_item_list .b_price {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 114px;
+    height: 31px;
+    padding-right: 5px;
+    text-align: right;
+    color: #666;
+}
+
+.pub_side_tool .stool_item_list .b_tag {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 16px;
+    padding: 0 3px;
+    background: url(http://pic.c-ctrip.com/index/bg_mask20141219.png) repeat-x 0 0;
+    _background: #333;
+    font: normal 12px/16px Simsun;
+    color: #fff;
+}
+
+/* 我的收藏 */
+.pub_side_tool .stool_fav_wrap .stool_item_list {
+    padding-top: 41px;
+}
+
+.pub_side_tool .stool_fav_wrap .stool_btn a {
+    color: #666666;
+}
+
+.pub_side_tool .stool_fav_wrap .stool_btn a:hover {
+    color: #FFFFFF;
+    border-color: #0066CC;
+    background-color: #0066CC;
+}
+
+/* 工具面板内容 */
+.pub_side_tool .stool_tool_list .stool_item_list {
+    width: 235px;
+    margin: 0;
+    padding: 41px 0 10px;
+}
+
+.pub_side_tool .stool_tool_list li {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    margin-bottom: 0;
+    background: none;
+}
+
+.pub_side_tool .stool_tool_list li a {
+    position: relative;
+    display: block;
+    height: 46px;
+    overflow: hidden;
+    padding: 9px 0 9px 22px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #385A86;
+}
+
+.pub_side_tool .stool_tool_list li a:hover {
+    text-decoration: none;
+    background-color: #E4EAF0;
+}
+
+.pub_side_tool .stool_tool_list li .stool_icon_type {
+    float: left;
+    margin-right: 10px;
+}
+
+/*===== 当返回顶部条件不满足的时候 =====*/
+.pub_side_tool .stool_no_top .stool_top,
+.pub_side_tool .stool_no_top .stool_hover_top {
+    display: none;
+}
+
+.pub_side_tool .stool_short_box div.stool_no_top {
+    padding-top: 79px;
+}
+
+.pub_side_tool .stool_short_box div.stool_no_top .stool_hover_feedback {
+    top: 79px;
+}
+
+.pub_side_tool .stool_short_box div.stool_no_top .stool_hover_serveic {
+    top: 130px;
+}
+
+@media screen and (max-height: 570px) {
+    /*===== 当浏览器高度小于570px的时候，隐藏工具栏顶部的广告 =====*/
+    .pub_side_tool .stool_ad,
+    .pub_side_tool .stool_ad_pop,
+    .pub_side_tool .stool_ad_pop .stool_arrow {
+        display: none !important;
+    }
+
+    .pub_side_tool .stool_qrcode_pop {
+        top: 10px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    /*===== 当浏览器高度小于570px的时候，隐藏工具栏顶部的广告 =====*/
+    .pub_side_tool .stool_hover_title {
+        top: 0;
+    }
+
+    .pub_side_tool .stool_hover_top {
+        top: 78px;
+    }
+
+    .pub_side_tool .stool_hover_feedback {
+        top: 129px;
+    }
+
+    .pub_side_tool .stool_hover_serveic {
+        top: 180px;
+    }
+
+    .pub_side_tool .stool_ctrl .stool_qr_code,
+    .pub_side_tool .stool_ctrl .line_s,
+    .pub_side_tool .stool_ctrl .stool_func,
+    .pub_side_tool .stool_qrcode_pop,
+    .pub_side_tool .stool_cont_wrap {
+        display: none !important;
+    }
+
+    .pub_side_tool .stool_ctrl {
+        position: absolute;
+        bottom: 0;
+        right: 0 !important;
+        height: auto;
+        background: none;
+        z-index: 12;
+        zoom: 1;
+    }
+
+    .pub_side_tool .stool_ctrl .stool_other {
+        position: relative;
+        bottom: 0;
+        padding: 129px 0 30px;
+    }
+
+    .pub_side_tool .stool_other .stool_top {
+        top: 78px;
+    }
+
+    .pub_side_tool .stool_ctrl .stool_login {
+        position: relative;
+        margin-bottom: -67px;
+        z-index: 2;
+    }
+
+    /*===== 当返回顶部条件不满足的时候 =====*/
+    .pub_side_tool .stool_ctrl .stool_no_top .stool_top,
+    .pub_side_tool .stool_ctrl .stool_no_top .stool_hover_top {
+        display: none;
+    }
+
+    .pub_side_tool .stool_ctrl div.stool_no_top {
+        padding-top: 79px;
+    }
+
+    .pub_side_tool .stool_ctrl div.stool_no_top .stool_hover_feedback {
+        top: 79px;
+    }
+
+    .pub_side_tool .stool_ctrl div.stool_no_top .stool_hover_serveic {
+        top: 130px;
+    }
+}

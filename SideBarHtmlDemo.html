@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body {
+            height: 20000px;
+            width: 10000px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--必须引用-->
+    <script src="http://webresource.c-ctrip.com/code/cquery/LABjs/LAB.js" charset="utf-8" type="text/javascript"></script>
+    <script src="http://webresource.c-ctrip.com/code/cquery/cQuery_110421.js" charset="utf-8" type="text/javascript"></script>
+    <!--<script src="SideBarSrc/onlineSideBar.js" charset="utf-8" type="text/javascript"></script>-->
+    <script src="http://webresource.c-ctrip.com/ResCRMOnline/R2/Sidebar.Online/SideBarSrc/onlineSideBar.js" charset="utf-8" type="text/javascript"></script>
+
+
+
+    <script type="text/javascript">
+
+        //暂缓执行项
+        $LAB.queueWait(function () {
+
+            if (window.COSB != undefined) {
+                if (COSB.sideBar != undefined && typeof (COSB.sideBar) == "object") {
+                    COSB.sideBar.init("Hello World");
+                    COSB.sideBar.show();
+                }
+            }
+            else
+                window.console && console.error("Cosb is undefined");
+        });
+    </script>
+</body>
+</html>
